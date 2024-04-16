@@ -1,0 +1,7 @@
+<div class="icon-container">
+  <button (click)="getRandomIcon()">Показать случайную иконку</button>
+  <div class="icon-wrapper">
+    <fa-icon *ngIf="!isLoading && currentIcon" [icon]="currentIcon!" size="4x"></fa-icon>
+    <div *ngIf="isLoading" class="loading">Загрузка...</div>
+  </div>
+</div>
